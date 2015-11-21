@@ -12,4 +12,5 @@ module.exports = (robot) ->
       .query(q)
       .get() (err, res, body) ->
         json = JSON.parse(body)
-        msg.send v.extract for k, v of json.query.pages
+        (msg.send v.extract if v.extract?) for k, v of json.query.pages
+        msg.send ":nya-n: ＜ しらないにゃーん" if json.query.pages[-1]?
