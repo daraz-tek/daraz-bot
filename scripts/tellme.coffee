@@ -1,6 +1,9 @@
+_ = require 'underscore'
 
 module.exports = (robot) ->
   robot.respond /tell( ?me)? (.*)/i, (msg) ->
+    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:']
+    prefix = "@#{msg.message.user.name}: #{_.sample nya_ns} ＜ "
     q =
       action: 'query'
       format: 'json'
@@ -12,5 +15,6 @@ module.exports = (robot) ->
       .query(q)
       .get() (err, res, body) ->
         json = JSON.parse(body)
-        (msg.send v.extract if v.extract?) for k, v of json.query.pages
-        msg.send ":nya-n: ＜ しらないにゃーん" if json.query.pages[-1]?
+        for k, v of json.query.pages
+          msg.send "#{prefix}#{v.extract}" if v.extract?
+        msg.send "#{prefix}しらないにゃーん" if json.query.pages[-1]?
