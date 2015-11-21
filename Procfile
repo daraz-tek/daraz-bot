@@ -1,1 +1,1 @@
-web: bin/hubot -a slack -n daraz-bot
+web: bin/hubot -a slack -n daraz
