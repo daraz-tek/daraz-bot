@@ -11,6 +11,7 @@ module.exports = (robot) ->
       prop: 'extracts'
       exchars: 120
       explaintext: 1
+      redirects: 3
     msg.http('https://ja.wikipedia.org/w/api.php')
       .query(q)
       .get() (err, res, body) ->
