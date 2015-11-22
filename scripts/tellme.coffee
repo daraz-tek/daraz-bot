@@ -7,7 +7,7 @@
 module.exports = (robot) ->
   robot.respond /tell( ?me)? (.*)/i, (msg) ->
     nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:', ':nya-n4']
-    prefix = "@#{msg.message.user.name}: #{msg.random nya_ns} ＜ "
+    prefix = "#{msg.random nya_ns} ＜ "
 
     q =
       action: 'query'
@@ -22,5 +22,5 @@ module.exports = (robot) ->
       .get() (err, res, body) ->
         json = JSON.parse(body)
         for k, v of json.query.pages
-          msg.send "#{prefix}#{v.extract}" if v.extract?
-        msg.send "#{prefix}しらないにゃーん" if json.query.pages[-1]?
+          msg.reply "#{prefix}#{v.extract}" if v.extract?
+        msg.reply "#{prefix}しらないにゃーん" if json.query.pages[-1]?
