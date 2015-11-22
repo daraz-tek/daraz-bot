@@ -1,9 +1,14 @@
-_ = require 'underscore'
+# Description:
+#   だらずさんは何でも知っているので教えてくれます
+#
+# Commands:
+#   hubot tell me <phrase> - <phrase> について教えてあげよう、妖怪ウィキウィキペディアは使ってないよ！
 
 module.exports = (robot) ->
   robot.respond /tell( ?me)? (.*)/i, (msg) ->
-    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:']
-    prefix = "@#{msg.message.user.name}: #{_.sample nya_ns} ＜ "
+    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:', ':nya-n4']
+    prefix = "@#{msg.message.user.name}: #{msg.random nya_ns} ＜ "
+
     q =
       action: 'query'
       format: 'json'

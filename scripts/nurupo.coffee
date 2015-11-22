@@ -1,4 +1,3 @@
-_ = require 'underscore'
 
 module.exports = (robot) ->
   robot.hear /ぬ.*る.*ぽ/, (msg) ->
@@ -14,5 +13,5 @@ module.exports = (robot) ->
     msg.send "#{prefix(msg)}しまえ"
 
   prefix = (msg) ->
-    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:']
-    "@#{msg.message.user.name}: #{_.sample nya_ns} ＜ "
+    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
+    "@#{msg.message.user.name}: #{msg.random nya_ns} ＜ "
