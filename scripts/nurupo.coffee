@@ -10,7 +10,9 @@ module.exports = (robot) ->
     else
       msg.send "#{prefix(msg)}さんを付けろよデコスケ野郎っ！"
 
+  robot.hear /こたつ/, (msg) ->
+    msg.send "#{prefix(msg)}しまえ"
+
   prefix = (msg) ->
     nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:']
     "@#{msg.message.user.name}: #{_.sample nya_ns} ＜ "
-
