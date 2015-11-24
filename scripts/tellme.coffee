@@ -6,7 +6,7 @@
 
 module.exports = (robot) ->
   robot.respond /tell( ?me)? (.*)/i, (msg) ->
-    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:', ':nya-n4']
+    nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
     prefix = "#{msg.random nya_ns} ＜ "
 
     q =

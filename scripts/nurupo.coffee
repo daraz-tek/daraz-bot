@@ -19,5 +19,5 @@ module.exports = (robot) ->
     msg.reply "#{prefix(msg)}うどん。"
 
   prefix = (msg) ->
-    nya_ns = [':nya-n:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
+    nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
     "#{msg.random nya_ns} ＜ "
