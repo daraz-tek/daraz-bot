@@ -18,6 +18,9 @@ module.exports = (robot) ->
   robot.hear /しりとり/, (msg) ->
     msg.reply "#{prefix(msg)}うどん。"
 
+  robot.hear /(糞|くそ|クソ)(すれ|スレ)/, (msg) ->
+    msg.reply "#{prefix(msg)}クソスレで悪かったな！！"
+
   prefix = (msg) ->
     nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
     "#{msg.random nya_ns} ＜ "
