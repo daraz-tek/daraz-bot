@@ -17,7 +17,7 @@ module.exports = (robot) ->
           msg.reply "=> #{body}"
 
 
-    robot.respond /script +((.|\s)+)/i, (msg) ->
+    robot.respond /script[ \n]+((.|\s)+)/i, (msg) ->
       data = msg.match[1]
 
       msg.http(process.env.RUBY_SCRIPT_URL)
