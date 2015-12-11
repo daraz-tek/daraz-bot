@@ -12,5 +12,5 @@ module.exports = (robot) ->
     say = target.format("HH時mm分の雨雲の様子にゃーん")
     wURL = "http://#{host}/static-images/rader/#{target.format("YYYY/MM/DD/HH/mm")}/00/pref_#{prefNumber}/large.jpg"
   nya_n = (msg) ->
-    nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
+    nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:', ':nya-n5:']
     "#{msg.random nya_ns} ＜ "
