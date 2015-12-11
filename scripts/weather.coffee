@@ -9,7 +9,6 @@ module.exports = (robot) ->
     diff = nowMinute - Math.floor(nowMinute / 10) * 10 + 5
     target = now.subtract(diff, 'minute')
     daraz = nya_n(msg)
-    msg.reply "#{daraz}#{say} #{wURL}"
     say = target.format("HH時mm分の雨雲の様子にゃーん")
     wURL = "http://#{host}/static-images/rader/#{target.format("YYYY/MM/DD/HH/mm")}/00/pref_#{prefNumber}/large.jpg"
   nya_n = (msg) ->
