@@ -15,7 +15,7 @@ module.exports = (robot) ->
     cronTime: '00 00 12 * * 2'
     onTick: ->
       robot.send {room: "#general"}, """```
-　　火曜のお昼はチャーハン作るよ！！
+　火曜のお昼はチャーハン作るよ！！
 　 ∧,,∧
 　(；`・ω・）　　｡･ﾟ･⌒）
 　/　　 ｏ━ヽニニフ))
