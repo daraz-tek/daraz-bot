@@ -9,7 +9,7 @@ module.exports = (robot) ->
   if process.env.RUBY_SCRIPT_URL
 
     robot.respond /ruby +(.*)/i, (msg) ->
-      data = "p (begin; #{msg.match[1]}; end)"
+      data = "puts (begin; #{msg.match[1]}; end).inspect"
 
       msg.http(process.env.RUBY_SCRIPT_URL)
         .header('Content-Type', 'text/plain')
