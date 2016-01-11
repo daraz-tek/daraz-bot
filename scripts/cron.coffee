@@ -22,3 +22,11 @@ module.exports = (robot) ->
 　しー-Ｊ
 ```
 """
+
+  new CronJob
+    start: true
+    timeZone: 'Asia/Tokyo'
+    cronTime: '00 00 18 * * 5'
+    onTick: ->
+      robot.send {room: "#general"}, "＜ ｜家｜　　λ λ λ λ λ λ....帰ろ。"
+
