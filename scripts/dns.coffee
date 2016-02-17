@@ -19,6 +19,6 @@ module.exports = (robot) ->
         if err?
           msg.reply ":nya-n: < #{domain} はわかんなかったにゃん"
         else
-          msg.reply ":nya-n: < #{domain} は #{addresses.join(' ')} ですにゃん"
+          msg.reply ":nya-n: < #{domain} は #{addresses.join('  *,*  ')} ですにゃん"
     catch
       msg.reply ":nya-n: < #{domain} はわかんなかったにゃん"
