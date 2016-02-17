@@ -36,7 +36,6 @@ module.exports = (robot) ->
 
   # ときどきうんちくを語ります
   robot.hear /.{20,}/, (msg) ->
-    msg.reply msg.random([0...10])
     if msg.random([0...10]) == 0 # 10%の確率
       kuromoji.builder({dicPath: 'node_modules/kuromoji/dist/dict/'}).build (err, tokenizer) ->
         token = msg.random tokenizer.tokenize(msg.match[0]).filter((t) -> t.pos == '名詞').map((t) -> t.surface_form)
