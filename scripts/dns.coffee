@@ -11,3 +11,14 @@ module.exports = (robot) ->
           domains.forEach (domain) -> msg.reply ":nya-n: < #{ip} は #{domain} ですにゃん"
     catch
       msg.reply ":nya-n: < #{ip} はわかんなかったにゃん"
+
+  robot.hear /(([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])\.)+([a-z]+)/gi, (msg) ->
+    domain = msg.match[0]
+    try
+      dns.resolve domain, (err, addresses) ->
+        if err?
+          msg.reply ":nya-n: < #{domain} はわかんなかったにゃん"
+        else
+          msg.reply ":nya-n: < #{domain} は #{addresses.join(' ')} ですにゃん"
+    catch
+      msg.reply ":nya-n: < #{domain} はわかんなかったにゃん"
