@@ -35,7 +35,7 @@ module.exports = (robot) ->
       msg.reply "表層形,品詞,品詞細分類1,品詞細分類2,品詞細分類3,活用型,活用形,基本形,読み,発音\n#{tokens.join("\n")}"
 
   # ときどきうんちくを語ります
-  robot.hear /.{15,}/, (msg) ->
+  robot.hear /.{10,}/, (msg) ->
     if msg.random([0...10]) == 0 # 10%の確率
       kuromoji.builder({dicPath: 'node_modules/kuromoji/dist/dict/'}).build (err, tokenizer) ->
         token = msg.random tokenizer.tokenize(msg.match[0]).filter((t) -> t.pos == '名詞').map((t) -> t.surface_form)
