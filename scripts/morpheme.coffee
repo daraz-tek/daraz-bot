@@ -11,7 +11,7 @@ module.exports = (robot) ->
     nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:']
     prefix = "#{msg.random nya_ns} ＜ "
 
-    kuromoji.builder({dicPath: 'node_modules/kuromoji/dist/dict/'}).build (err, _tokenizer) ->
+    kuromoji.builder({dicPath: 'dict/'}).build (err, _tokenizer) ->
       tokenizer = _tokenizer
 
       tokens = tokenizer.tokenize(msg.match[1])
@@ -37,7 +37,7 @@ module.exports = (robot) ->
   # ときどきうんちくを語ります
   robot.hear /.{10,}/, (msg) ->
     if msg.random([0...10]) == 0 # 10%の確率
-      kuromoji.builder({dicPath: 'node_modules/kuromoji/dist/dict/'}).build (err, tokenizer) ->
+      kuromoji.builder({dicPath: 'dict/'}).build (err, tokenizer) ->
         token = msg.random tokenizer.tokenize(msg.match[0]).filter((t) -> t.pos == '名詞').map((t) -> t.surface_form)
         if token?
           q =
@@ -53,5 +53,5 @@ module.exports = (robot) ->
             .get() (err, res, body) ->
               json = JSON.parse(body)
               for k, v of json.query.pages
-                msg.reply ":nya-n: < 【う・ん・ち・く】#{v.extract}" if v.extract?
+                msg.reply ":nya-n: < 【う・ん・ち・く】#{token}\n#{v.extract}" if v.extract?
 
