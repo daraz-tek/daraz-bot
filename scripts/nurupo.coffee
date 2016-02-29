@@ -30,6 +30,9 @@ module.exports = (robot) ->
   robot.hear /ちゃ|茶/, (msg) ->
     msg.reply "お茶どぞー < #{nyanco(msg)}っ :tea:"
 
+  robot.hear /風邪|かぜ|カゼ|体調|つらい|くるしい|痛い|ひぎぃ|うぐぅ/, (msg) ->
+    msg.reply "おくすりどぞー < #{nyanco(msg)}っ :pill:"
+
   robot.hear /進捗どうですか/, (msg) ->
     from = "@#{msg.envelope.user.name}"
     msg.reply "#{nyanco(msg)} < そう言うと #{from} は永い眠りについた。メールとチケットが山のように積もった部屋の片隅で・・・。主を失ったモニタのあかりだけが、動かなくなった #{from} を優しく照らし続けた。"
