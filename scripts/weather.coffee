@@ -14,6 +14,8 @@ module.exports = (robot) ->
       "#{target.format("YYYY/MM/DD/HH/mm")}/00/pref_#{prefNumber}/large.jpg"
     pageURL = 'http://www.tenki.jp/radar/7/34/'
     msg.reply "#{daraz}#{say} #{imgURL} #{pageURL}"
+  robot.hear /便器|べんき|ベンキ/, (msg) ->
+    msg.reply "#{nya_n(msg)}https://dl.dropboxusercontent.com/u/27433018/toilet.jpg"
   nya_n = (msg) ->
     nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:', ':nya-n5:']
     "#{msg.random nya_ns} ＜ "
