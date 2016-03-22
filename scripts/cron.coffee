@@ -30,3 +30,10 @@ module.exports = (robot) ->
     onTick: ->
       robot.send {room: "#general"}, "＜ ｜家｜　　λ λ λ λ λ λ....帰ろ。"
 
+  new CronJob
+    start: true
+    timeZone: 'Asia/Tokyo'
+    cronTime: '00 10 12 * * 3'
+    onTick: ->
+      robot.send {room: "#general"}, "< おいおまいら、今週末のもくもく予定はどや？いっしょにもくもくせぇへんのか？ @here"
+
