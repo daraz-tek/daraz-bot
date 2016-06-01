@@ -36,11 +36,18 @@ module.exports = (robot) ->
 
   # ときどきうんちくを語ります
   # - 全角文字4文字が続く
-  # - 1/15 の確率
+  # - 1/10 の確率
+  # - 句読点、全角空白を除く
   robot.hear /[^\x01-\x7e]{4,}/, (msg) ->
-    if msg.random([0...15]) == 0
+    if msg.random([0...10]) == 0
       kuromoji.builder({dicPath: 'node_modules/kuromoji/dist/dict/'}).build (err, tokenizer) ->
-        token = msg.random tokenizer.tokenize(msg.match[0]).filter((t) -> t.pos == '名詞').map((t) -> t.surface_form)
+        token = msg.random(
+          tokenizer.
+            tokenize(msg.match[0]).
+            filter((t) -> t.pos == '名詞').
+            map((t) -> t.surface_form).
+            filter((t) -> not /[、。　]/.test(t))
+        )
         if token?
           q =
             action: 'query'
