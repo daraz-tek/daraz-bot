@@ -46,7 +46,7 @@ module.exports = (robot) ->
             tokenize(msg.match[0]).
             filter((t) -> t.pos == '名詞').
             map((t) -> t.surface_form).
-            filter((t) -> not /[、。　]/.test(t))
+            filter((t) -> not /[、・…]/.test(t))
         )
         if token?
           q =
