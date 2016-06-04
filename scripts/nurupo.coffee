@@ -15,6 +15,9 @@ module.exports = (robot) ->
   robot.hear /(しお|塩)/, (msg) ->
     msg.reply "#{nyanco(msg)} < しお"
 
+  robot.hear /(らーめん|ラーメン|拉麺|らうめん)/, (msg) ->
+    msg.reply "#{nyanco(msg)} < :ramen:"
+
   robot.hear /しりとり/, (msg) ->
     msg.reply "#{nyanco(msg)} < うどん。"
 
