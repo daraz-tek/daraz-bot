@@ -46,6 +46,9 @@ module.exports = (robot) ->
             tokenize(msg.match[0]).
             filter((t) -> t.pos == '名詞').
             map((t) -> t.surface_form).
+            filter((t) -> not /^[\u3040-\u309F]$/.test(t)). # ひらがな１文字 http://www.unicode.org/charts/PDF/U3040.pdf
+            filter((t) -> not /^[\u30A0-\u30FF]$/.test(t)). # かたかな１文字 http://www.unicode.org/charts/PDF/U30A0.pdf
+            filter((t) -> not /^[\uFF65-\uFF9F]$/.test(t)). # 半角カナ１文字 http://www.unicode.org/charts/PDF/UFF00.pdf
             filter((t) -> not /[、・…]/.test(t))
         )
         if token?
