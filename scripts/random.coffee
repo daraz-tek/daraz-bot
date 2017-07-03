@@ -10,5 +10,6 @@
 module.exports = (robot) ->
   robot.respond /(choice|random|えらべ|選べ) +(.*)/, (msg) ->
     words = msg.match[2].split(/(?:,| )+/)
+    words.push("人に決められるだけの人生でいいのか？自分で決めようず")
     msg.reply ":nya-n: < #{msg.random(words)}"
 
