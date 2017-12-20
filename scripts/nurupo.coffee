@@ -40,6 +40,13 @@ module.exports = (robot) ->
     from = "@#{msg.envelope.user.name}"
     msg.reply "#{nyanco(msg)} < そう言うと #{from} は永い眠りについた。メールとチケットが山のように積もった部屋の片隅で・・・。主を失ったモニタのあかりだけが、動かなくなった #{from} を優しく照らし続けた。"
 
+  robot.hear /(のむら|さちよ|野村|沙知代|野球|やきゅう|やきう)/, (msg) ->
+    msg.reply '''
+:nomura-exodia-1::nomura-exodia-2::nomura-exodia-3:
+:nomura-exodia-4::nomura-exodia-5::nomura-exodia-6: :exclamation::question:
+:nomura-exodia-7::nomura-exodia-8::nomura-exodia-9:
+'''
+
   nyanco = (msg) ->
     nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:', ':nya-n5:']
     "#{msg.random(nya_ns)}"
