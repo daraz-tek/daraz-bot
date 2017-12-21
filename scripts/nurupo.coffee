@@ -40,8 +40,16 @@ module.exports = (robot) ->
     from = "@#{msg.envelope.user.name}"
     msg.reply "#{nyanco(msg)} < そう言うと #{from} は永い眠りについた。メールとチケットが山のように積もった部屋の片隅で・・・。主を失ったモニタのあかりだけが、動かなくなった #{from} を優しく照らし続けた。"
 
-  robot.hear /(のむら|さちよ|野村|沙知代|野球|やきゅう|やきう)/, (msg) ->
+  robot.hear /(のむら|さちよ|野村|沙知代|さっちー|サッチー|のむさん|ノムサン)/, (msg) ->
     msg.send '''
+:nomura-exodia-1::nomura-exodia-2::nomura-exodia-3:
+:nomura-exodia-4::nomura-exodia-5::nomura-exodia-6: :exclamation::question:
+:nomura-exodia-7::nomura-exodia-8::nomura-exodia-9:
+'''
+
+  robot.hear /(野球|やきゅう|やきう)/, (msg) ->
+    if msg.random([0...10]) == 0
+      msg.send '''
 :nomura-exodia-1::nomura-exodia-2::nomura-exodia-3:
 :nomura-exodia-4::nomura-exodia-5::nomura-exodia-6: :exclamation::question:
 :nomura-exodia-7::nomura-exodia-8::nomura-exodia-9:
