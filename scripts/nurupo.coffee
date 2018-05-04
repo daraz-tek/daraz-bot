@@ -47,6 +47,15 @@ module.exports = (robot) ->
 :nomura-exodia-7::nomura-exodia-8::nomura-exodia-9:
 '''
 
+  robot.hear /(肉|にく|ニク)/, (msg) ->
+    if msg.random([0...3]) == 0
+      msg.send '''
+:spark-exodia-00::spark-exodia-01::spark-exodia-02::spark-exodia-03::spark-exodia-04::spark-exodia-05:
+:spark-exodia-06::spark-exodia-07::spark-exodia-08::spark-exodia-09::spark-exodia-10::spark-exodia-11:
+:spark-exodia-12::spark-exodia-13::spark-exodia-14::spark-exodia-15::spark-exodia-16::spark-exodia-17:
+:spark-exodia-18::spark-exodia-19::spark-exodia-20::spark-exodia-21::spark-exodia-22::spark-exodia-23:
+'''
+
   robot.hear /(野球|やきゅう|やきう)/, (msg) ->
     if msg.random([0...10]) == 0
       msg.send '''
