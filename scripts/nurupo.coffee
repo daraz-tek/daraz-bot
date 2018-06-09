@@ -67,8 +67,8 @@ module.exports = (robot) ->
 :nomura-exodia-7::nomura-exodia-8::nomura-exodia-9:
 '''
 
-  robot.hear /(死|殺)?.+(ね|ネ).*(ハム|はむ)(たろう|太郎)/, (msg) ->
-    if msg.match[1]?
+  robot.hear /.*(ね|ネ).+(ハム|はむ)(たろう|たろー|タロウ|タロー|太郎)/, (msg) ->
+    if /(死|亡|殺)/.test(msg.match[0]) or msg.random([0...10]) == 0
       msg.reply ":hamster: < まったくなのだ！万死に値するのだ！！"
     else
       msg.reply ":hamster: < まったくなのだ！！！"
