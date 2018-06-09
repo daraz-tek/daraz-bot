@@ -67,6 +67,9 @@ module.exports = (robot) ->
 :nomura-exodia-7::nomura-exodia-8::nomura-exodia-9:
 '''
 
+  robot.hear /(ね|ネ).*(ハム|はむ)(たろう|太郎)/, (msg) ->
+    msg.reply ":hamster: < まったくなのだ！！！"
+
   nyanco = (msg) ->
     nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:', ':nya-n5:']
     "#{msg.random(nya_ns)}"
