@@ -3,7 +3,7 @@ host = 'az416740.vo.msecnd.net'
 prefNumber = '34'
 
 module.exports = (robot) ->
-  robot.hear /天気|晴|雨|曇/, (msg) ->
+  robot.hear /天気/, (msg) ->
     now = moment()
     nowMinute = now.minute()
     diff = nowMinute - Math.floor(nowMinute / 10) * 10 + 5
