@@ -25,7 +25,8 @@ module.exports = (robot) ->
     msg.reply "#{nyanco(msg)} < クソスレで悪かったな！！"
 
   robot.hear /(鳥取|とっとり)/, (msg) ->
-    msg.reply "http://riceballman.fc2web.com/AA-Illust/Data/Tochigi.jpg?random=#{msg.random([0...100])}"
+    if msg.random([0...10]) == 0
+      msg.reply "http://riceballman.fc2web.com/AA-Illust/Data/Tochigi.jpg?random=#{msg.random([0...100])}"
 
   robot.hear /(すし|鮨|寿司|スシ|まぐろ|マグロ|sushi)/i, (msg) ->
     msg.reply "#{nyanco(msg)} < あいよ っ :sushi:"
