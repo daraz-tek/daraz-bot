@@ -74,6 +74,10 @@ module.exports = (robot) ->
     else
       msg.reply ":hamster: < まったくなのだ！！！"
 
+  robot.hear /emacs|Emacs|vi|Vi/, (msg) ->
+    from = "@#{msg.envelope.user.name}"
+    msg.reply "#{nyanco(msg)} < Emacs vs. Vi ファイ！"
+      
   nyanco = (msg) ->
     nya_ns = [':nya-n1:', ':nya-n2:', ':nya-n3:', ':nya-n4:', ':nya-n5:']
     "#{msg.random(nya_ns)}"
