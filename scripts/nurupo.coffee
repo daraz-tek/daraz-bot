@@ -74,7 +74,7 @@ module.exports = (robot) ->
     else
       msg.reply ":hamster: < まったくなのだ！！！"
 
-  robot.hear /emacs|Emacs|vi|Vi/, (msg) ->
+  robot.hear /^(?=.*[eE]macs)(?=.*[vV]i)/, (msg) ->
     from = "@#{msg.envelope.user.name}"
     msg.reply "#{nyanco(msg)} < Emacs vs. Vi ファイ！"
       
