@@ -1,17 +1,19 @@
 dns = require('dns')
+request = require 'request'
 
 module.exports = (robot) ->
 
   robot.hear /(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/, (msg) ->
     ip = msg.match[0]
-    try
-      dns.reverse ip, (err, domains) ->
-        if err?
-          msg.reply ":nya-n: < #{ip} はわかんなかったにゃん"
-        else
-          domains.forEach (domain) -> msg.reply ":nya-n: < #{ip} は #{domain} ですにゃん"
-    catch
-      msg.reply ":nya-n: < #{ip} はわかんなかったにゃん"
+    options =
+      url: "https://ipinfo.io/#{ip}"
+      timeout: 2000
+      headers: { 'Content-Type': 'application/json' }
+    request options, (error, response, body) ->
+      if response.statusCode == 200
+        msg.reply ":nya-n: < #{body}"
+      else
+        msg.reply ":nya-n: < がんばったけど ${ip} よくわからんかったにゃん"
 
   robot.hear /(([a-z0-9]|[a-z0-9][a-z0-9\-]*[a-z0-9])\.)+([a-z]+)/gi, (msg) ->
     domain = msg.match[0]
