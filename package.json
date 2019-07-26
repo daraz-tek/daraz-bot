@@ -1,0 +1,19 @@
+{
+  "name": "daraz-san",
+  "version": "1.0.0",
+  "description": "Daraz-san ⚡",
+  "main": "index.js",
+  "author": "Kohei Watanabe <kou029w@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^1.2.0"
+  },
+  "engines": {
+    "node": "12.x",
+    "yarn": "1.x"
+  }
+}
