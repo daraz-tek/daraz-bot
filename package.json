@@ -4,13 +4,24 @@
   "description": "Daraz-san ⚡",
   "main": "index.js",
   "author": "Kohei Watanabe <kou029w@gmail.com>",
+  "contributors": [
+    "SAKAGUCHI Takashi <takashi.sakaguchi@ummm.info>",
+    "Masayuki Higashino <mh61503891@users.noreply.github.com>",
+    "Kazuki Shigemichi <shigemichik@gmail.com>"
+  ],
   "license": "MIT",
   "private": true,
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "@slack/bolt": "^1.2.0"
+    "@slack/bolt": "^1.2.0",
+    "date-fns": "^2.0.0-beta.3",
+    "get-video-id": "^3.1.4",
+    "glob": "^7.1.4",
+    "kuromoji": "^0.1.2",
+    "node-fetch": "^2.6.0",
+    "tldjs": "^2.3.1"
   },
   "engines": {
     "node": "12.x",
