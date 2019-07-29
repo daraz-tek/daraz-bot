@@ -19,8 +19,14 @@
 
 - `SLACK_BOT_TOKEN` ... OAuth & Permissions ページにあるボット (xoxb) トークン
 - `SLACK_SIGNING_SECRET` ... Basic Information ページにある Signing Secret
-- (Optional) `PORT` ... ポート番号。デフォルトは 80。
+- (Optional) `PORT` ... ポート番号。デフォルトは 8080。
 
 ### デプロイ
 
+#### Heroku
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kou029w/daraz-san)
+
+#### CodeSandbox
+
+[![Edit daraz-san](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/kou029w/daraz-san)
