@@ -9,6 +9,6 @@ const app = daraz(
 );
 
 (async () => {
-  await app.start(process.env.PORT || 80);
+  await app.start(process.env.PORT || 8080);
   console.log("Daraz-san ⚡ running");
 })();
