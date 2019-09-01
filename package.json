@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@slack/bolt": "^1.2.0",
-    "date-fns": "^2.0.0-beta.3",
+    "date-fns": "^2.0.1",
     "get-video-id": "^3.1.4",
     "glob": "^7.1.4",
     "kuromoji": "^0.1.2",
@@ -24,7 +24,7 @@
     "tldjs": "^2.3.1"
   },
   "engines": {
-    "node": "10.x",
+    "node": "12.x",
     "yarn": "1.x"
   }
 }
