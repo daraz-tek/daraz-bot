@@ -28,6 +28,10 @@ module.exports = (robot) ->
     if msg.random([0...10]) == 0
       msg.reply "http://riceballman.fc2web.com/AA-Illust/Data/Tochigi.jpg?random=#{msg.random([0...100])}"
 
+  robot.hear /(カレー|かれー|華麗)/, (msg) ->
+    if msg.random([0...3]) == 0
+      msg.reply "https://pbs.twimg.com/media/C-RVt9pUAAARRVe.jpg"
+
   robot.hear /(すし|鮨|寿司|スシ|まぐろ|マグロ|sushi)/i, (msg) ->
     msg.reply "#{nyanco(msg)} < あいよ っ :sushi:"
 
