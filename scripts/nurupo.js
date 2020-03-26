@@ -1,3 +1,4 @@
+// @ts-check
 const random = require("./util/random");
 const nyanco = require("./util/nyanco");
 
@@ -26,9 +27,10 @@ const patterns = [
   [
     /(カレー|かれー|華麗)/,
     ({ say }) => say("https://pbs.twimg.com/media/C-RVt9pUAAARRVe.jpg")
-  ][
-    (/(すし|鮨|寿司|スシ|まぐろ|マグロ|sushi)/i,
-    ({ say }) => say(`${nyanco()} < あいよ っ :sushi:`))
+  ],
+  [
+    /(すし|鮨|寿司|スシ|まぐろ|マグロ|sushi)/i,
+    ({ say }) => say(`${nyanco()} < あいよ っ :sushi:`)
   ],
   [/ちゃ|茶/, ({ say }) => say(`お茶どぞー < ${nyanco()}っ :tea:`)],
   [
