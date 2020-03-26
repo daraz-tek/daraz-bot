@@ -30,3 +30,7 @@
 #### CodeSandbox
 
 [![Edit daraz-san](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/kou029w/daraz-san)
+
+#### Glitch
+
+[![Edit daraz-san](https://img.shields.io/badge/glitch-edit-33f?logo=glitch&style=for-the-badge)](https://glitch.com/edit/#!/kou029w-daraz-san)

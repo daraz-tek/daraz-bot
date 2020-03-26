@@ -1,0 +1,13 @@
+name: sync-glitch
+on:
+  push:
+    branches: [master]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npx sync-glitch-cli
+        env:
+          GH_REPO: "${{ github.repository }}"
+          GLITCH_PROJECT_ID: ae04f91d-6c70-41c2-b67b-77ef3b9dde16
+          GLITCH_TOKEN: "${{ secrets.GLITCH_TOKEN }}"
