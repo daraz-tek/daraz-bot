@@ -14,5 +14,5 @@ module.exports = [
   async ({ context, say }) => {
     const ans = await tellme(context.matches[2]);
     if (ans != null) say(`${nyanco()} ＜ ${ans}`);
-  }
+  },
 ];

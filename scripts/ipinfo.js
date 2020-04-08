@@ -7,7 +7,7 @@ module.exports = [
     const url = `https://ipinfo.io/${ip}`;
     const options = {
       timeout: 2000,
-      headers: { Accept: "application/json" }
+      headers: { Accept: "application/json" },
     };
     const response = await fetch(url, options);
     say(
@@ -15,5 +15,5 @@ module.exports = [
         ? `:nya-n: < ${await response.text()}`
         : `:nya-n: < がんばったけど ${ip} よくわからんかったにゃん`
     );
-  }
+  },
 ];

@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 
-module.exports = async titles => {
+module.exports = async (titles) => {
   const url = new URL("https://ja.wikipedia.org/w/api.php");
   const params = new URLSearchParams({
     action: "query",
@@ -9,7 +9,7 @@ module.exports = async titles => {
     titles,
     redirects: "",
     exchars: 120,
-    explaintext: ""
+    explaintext: "",
   });
   try {
     const response = await fetch([url, params].join("?"));

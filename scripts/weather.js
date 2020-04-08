@@ -7,11 +7,11 @@ const nyanco = require("./util/nyanco");
 const timeZone = "Asia/Tokyo";
 const prefNumber = 34;
 const pageURL = `https://www.tenki.jp/radar/7/${prefNumber}/`;
-const imgURL = target =>
+const imgURL = (target) =>
   [
     "https://static.tenki.jp/static-images/radar/",
     format(target, "yyyy/MM/dd/HH/mm/ss", { timeZone }),
-    `/pref-${prefNumber}-large.jpg`
+    `/pref-${prefNumber}-large.jpg`,
   ].join("");
 
 module.exports = [
@@ -19,7 +19,7 @@ module.exports = [
   async ({ say }) => {
     const target = utcToZonedTime(
       roundToNearestMinutes(subMinutes(new Date(), 5), {
-        nearestTo: 5
+        nearestTo: 5,
       }),
       timeZone
     );
@@ -32,8 +32,8 @@ module.exports = [
           timeZone
         )}`,
         imgURL(target),
-        pageURL
+        pageURL,
       ].join("\n")
     );
-  }
+  },
 ];

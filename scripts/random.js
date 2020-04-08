@@ -16,8 +16,8 @@ module.exports = [
   ({ context, say }) => {
     const words = [
       ...context.matches[2].split(/(?:,|\s)+/),
-      "人に決められるだけの人生でいいのか？自分で決めようず"
+      "人に決められるだけの人生でいいのか？自分で決めようず",
     ];
     say(`:nya-n: < ${random(words)}`);
-  }
+  },
 ];

@@ -1,4 +1,4 @@
-module.exports = app => {
+module.exports = (app) => {
   app.message(/555/, ({ say }) => {
     say(
       [
@@ -6,7 +6,7 @@ module.exports = app => {
         "ｷｭｨｰﾝ…ｷｭｨｰﾝ…ｷｭｨｰﾝ… > :nya-n:",
         "Complete > :nya-n:",
         "変身！ > :nya-n:",
-        ":555: ﾉｼ"
+        ":555: ﾉｼ",
       ].join("\n")
     );
   });
@@ -28,7 +28,7 @@ module.exports = app => {
         "　 |　3　(∪￣]",
         "　く､･〟 (∩￣]",
         "￣￣￣￣￣￣￣￣",
-        "```"
+        "```",
       ].join("\n")
     );
   });

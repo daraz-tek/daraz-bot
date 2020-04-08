@@ -18,5 +18,5 @@ module.exports = [
     } catch {
       say(`:nya-n: < ${domain} はわかんなかったにゃん`);
     }
-  }
+  },
 ];

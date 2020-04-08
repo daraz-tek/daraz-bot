@@ -19,5 +19,5 @@ module.exports = [
         ? `https://www.youtube.com/watch?v=${get_video_id(dict.url)}`
         : dict.url;
     say(`宇宙って良いにゃーん\n${dict.title}\n${url}`);
-  }
+  },
 ];

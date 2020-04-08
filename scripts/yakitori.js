@@ -10,10 +10,11 @@ const yakitoris = [
   "―зεз- 軟骨",
   "―⊂ZZZ⊃ ｿｰｾｰｼﾞ",
   "―<コ:彡- ｲｶ丸焼き",
-  "―>ﾟ)))彡- 魚丸焼き"
+  "―>ﾟ)))彡- 魚丸焼き",
 ];
 
 module.exports = [
   /焼鳥|焼き鳥|やきとり|ヤキトリ|串|プロキシ|プロクシ|proxy|Proxy|PROXY|ピロシキ/,
-  ({ say }) => say(`串焼きでも食べるにゃん < ${nyanco()}っ${random(yakitoris)}`)
+  ({ say }) =>
+    say(`串焼きでも食べるにゃん < ${nyanco()}っ${random(yakitoris)}`),
 ];

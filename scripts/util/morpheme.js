@@ -24,15 +24,15 @@ const features = new Map([
   ["conjugated_form", "活用形"],
   ["basic_form", "基本形"],
   ["reading", "読み"],
-  ["pronunciation", "発音"]
+  ["pronunciation", "発音"],
 ]);
 
-const toCSV = tokens =>
+const toCSV = (tokens) =>
   [
     [...features.values()].join(","),
-    ...tokens.map(token =>
-      [...features.keys()].map(feature => token[feature]).join(",")
-    )
+    ...tokens.map((token) =>
+      [...features.keys()].map((feature) => token[feature]).join(",")
+    ),
   ].join("\n");
 
 module.exports = { useTokenize, toCSV };

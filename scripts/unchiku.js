@@ -13,10 +13,10 @@ module.exports = [
       const words = tokenize(context.matches[0])
         .filter(({ pos }) => pos === "名詞")
         .map(({ surface_form }) => surface_form)
-        .filter(t => !/^[\u3040-\u309F]$/.test(t)) //ひらがな１文字 http://www.unicode.org/charts/PDF/U3040.pdf
-        .filter(t => !/^[\u30A0-\u30FF]$/.test(t)) //かたかな１文字 http://www.unicode.org/charts/PDF/U30A0.pdf
-        .filter(t => !/^[\uFF65-\uFF9F]$/.test(t)) //半角カナ１文字 http://www.unicode.org/charts/PDF/UFF00.pdf
-        .filter(t => !/[、・…]/.test(t));
+        .filter((t) => !/^[\u3040-\u309F]$/.test(t)) //ひらがな１文字 http://www.unicode.org/charts/PDF/U3040.pdf
+        .filter((t) => !/^[\u30A0-\u30FF]$/.test(t)) //かたかな１文字 http://www.unicode.org/charts/PDF/U30A0.pdf
+        .filter((t) => !/^[\uFF65-\uFF9F]$/.test(t)) //半角カナ１文字 http://www.unicode.org/charts/PDF/UFF00.pdf
+        .filter((t) => !/[、・…]/.test(t));
       const word = random(words);
       const ans = await tellme(word);
       if (/^(|…|しらないにゃーん)$/.test(ans)) {
@@ -26,5 +26,5 @@ module.exports = [
     } catch (e) {
       console.error(e);
     }
-  }
+  },
 ];

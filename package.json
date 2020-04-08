@@ -15,14 +15,14 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "@slack/bolt": "~2.0.0",
-    "date-fns": "~2",
-    "date-fns-tz": "~1",
-    "get-video-id": "~3",
-    "glob": "~7",
+    "@slack/bolt": "2.x",
+    "date-fns": "2.x",
+    "date-fns-tz": "1.x",
+    "get-video-id": "3.x",
+    "glob": "7.x",
     "kuromoji": "0.1.x",
-    "node-fetch": "~2",
-    "tldjs": "~2"
+    "node-fetch": "2.x",
+    "tldjs": "2.x"
   },
   "engines": {
     "yarn": "1.x"
