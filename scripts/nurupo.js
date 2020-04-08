@@ -45,7 +45,7 @@ const patterns = [
     /進捗どうですか/,
     ({ message, say }) => {
       const from = `<@${message.user}>`;
-      say(
+      return say(
         [
           `${nyanco()} < そう言うと ${from} は永い眠りについた。`,
           `メールとチケットが山のように積もった部屋の片隅で・・・。`,
@@ -69,7 +69,7 @@ const patterns = [
     /(肉|にく|ニク)/,
     ({ say }) => {
       if (random([...Array(3).keys()]) !== 0) return;
-      say(
+      return say(
         [
           ":spark-exodia-00::spark-exodia-01::spark-exodia-02::spark-exodia-03::spark-exodia-04::spark-exodia-05:",
           ":spark-exodia-06::spark-exodia-07::spark-exodia-08::spark-exodia-09::spark-exodia-10::spark-exodia-11:",
@@ -83,7 +83,7 @@ const patterns = [
     /(野球|やきゅう|やきう)/,
     ({ say }) => {
       if (random([...Array(10).keys()]) !== 0) return;
-      say(
+      return say(
         [
           ":nomura-exodia-1::nomura-exodia-2::nomura-exodia-3:",
           ":nomura-exodia-4::nomura-exodia-5::nomura-exodia-6: :exclamation::question:",
@@ -99,9 +99,9 @@ const patterns = [
         /(死|亡|殺)/.test(context.matches[0]) ||
         random([...Array(10).keys()]) === 0
       ) {
-        say(":hamster: < まったくなのだ！万死に値するのだ！！");
+        return say(":hamster: < まったくなのだ！万死に値するのだ！！");
       } else {
-        say(":hamster: < まったくなのだ！！！");
+        return say(":hamster: < まったくなのだ！！！");
       }
     },
   ],

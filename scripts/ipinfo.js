@@ -10,7 +10,7 @@ module.exports = [
       headers: { Accept: "application/json" },
     };
     const response = await fetch(url, options);
-    say(
+    return say(
       response.ok
         ? `:nya-n: < ${await response.text()}`
         : `:nya-n: < がんばったけど ${ip} よくわからんかったにゃん`

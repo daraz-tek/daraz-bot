@@ -18,6 +18,6 @@ module.exports = [
       ...context.matches[2].split(/(?:,|\s)+/),
       "人に決められるだけの人生でいいのか？自分で決めようず",
     ];
-    say(`:nya-n: < ${random(words)}`);
+    return say(`:nya-n: < ${random(words)}`);
   },
 ];

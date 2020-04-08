@@ -24,7 +24,7 @@ module.exports = [
       timeZone
     );
 
-    say(
+    return say(
       [
         `${nyanco()} ＜ ${format(
           target,

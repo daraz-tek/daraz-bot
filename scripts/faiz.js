@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  app.message(/555/, ({ say }) => {
+  app.message(/555/, ({ say }) =>
     say(
       [
         "Standing by... > :nya-n:",
@@ -8,9 +8,9 @@ module.exports = (app) => {
         "変身！ > :nya-n:",
         ":555: ﾉｼ",
       ].join("\n")
-    );
-  });
-  app.message(/551/, ({ say }) => {
+    )
+  );
+  app.message(/551/, ({ say }) =>
     say(
       [
         "551の豚まんがあるときー？ > :nya-n:",
@@ -30,6 +30,6 @@ module.exports = (app) => {
         "￣￣￣￣￣￣￣￣",
         "```",
       ].join("\n")
-    );
-  });
+    )
+  );
 };

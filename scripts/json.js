@@ -14,7 +14,7 @@ module.exports = [
     try {
       const json = JSON.parse(context.matches[1]);
       const res = JSON.stringify(json, null, 2);
-      say([`${nyanco()} っ`, "```", res, "```"].join("\n"));
+      return say([`${nyanco()} っ`, "```", res, "```"].join("\n"));
     } catch (e) {
       console.error(e);
     }

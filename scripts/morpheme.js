@@ -16,7 +16,9 @@ module.exports = [
       const tokenize = await useTokenize();
       const tokens = tokenize(context.matches[1]);
       const readings = tokens.map(({ reading }) => reading);
-      say([`${nyanco()} ＜ ${readings.join("")}`, toCSV(tokens)].join("\n"));
+      return say(
+        [`${nyanco()} ＜ ${readings.join("")}`, toCSV(tokens)].join("\n")
+      );
     } catch (e) {
       console.error(e);
     }

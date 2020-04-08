@@ -22,7 +22,7 @@ module.exports = [
       if (/^(|…|しらないにゃーん)$/.test(ans)) {
         throw new Error(`don't know ${word} : ${ans}`);
       }
-      say(`:nya-n: < 【う・ん・ち・く】${ans}`);
+      return say(`:nya-n: < 【う・ん・ち・く】${ans}`);
     } catch (e) {
       console.error(e);
     }

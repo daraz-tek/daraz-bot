@@ -13,6 +13,6 @@ module.exports = [
   /tell( ?me)? (.*)/i,
   async ({ context, say }) => {
     const ans = await tellme(context.matches[2]);
-    if (ans != null) say(`${nyanco()} ＜ ${ans}`);
+    if (ans != null) return say(`${nyanco()} ＜ ${ans}`);
   },
 ];

@@ -14,9 +14,11 @@ module.exports = [
           err ? reject(err) : resolve(records)
         )
       );
-      say(`:nya-n: < ${domain} は ${records.join("  *,*  ")} ですにゃん`);
+      return say(
+        `:nya-n: < ${domain} は ${records.join("  *,*  ")} ですにゃん`
+      );
     } catch {
-      say(`:nya-n: < ${domain} はわかんなかったにゃん`);
+      return say(`:nya-n: < ${domain} はわかんなかったにゃん`);
     }
   },
 ];
