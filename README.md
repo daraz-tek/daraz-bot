@@ -23,6 +23,10 @@
 
 ### デプロイ
 
+#### Fly.io
+
+[`flyctl deploy`](https://fly.io/docs/speedrun/)
+
 #### Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kou029w/daraz-san)

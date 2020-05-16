@@ -1,0 +1,4 @@
+app = "daraz-san-kou029w"
+
+[build]
+  builder = "cloudfoundry/cnb:base"
