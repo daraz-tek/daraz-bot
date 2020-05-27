@@ -31,6 +31,10 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kou029w/daraz-san)
 
+#### Google Cloud Run
+
+[![Deploy](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/kou029w/daraz-san)
+
 #### CodeSandbox
 
 [![Edit daraz-san](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/kou029w/daraz-san)
