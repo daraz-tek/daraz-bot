@@ -1,6 +1,9 @@
 {
-  "extends": ["config:base"],
-  "rangeStrategy": "update-lockfile",
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    ":maintainLockFilesWeekly"
+  ],
   "automerge": true,
   "requiredStatusChecks": null
 }
