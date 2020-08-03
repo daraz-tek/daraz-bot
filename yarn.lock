@@ -3,9 +3,9 @@
 
 
 "@slack/bolt@2.x":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@slack/bolt/-/bolt-2.2.0.tgz#996a789bfda88852e80612f8c208565e08539b5a"
-  integrity sha512-ndlqLyoWVLnYGiSPCTkryqnVriSZ1BLVzcDCf0Km9sVVvego0R1hbcYHf9jTTyhIBnBeEcYTIPWPW5BWWtu2cQ==
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/@slack/bolt/-/bolt-2.2.3.tgz#f0a106b011ec98fcb0ef61e16ddfbb1505f96628"
+  integrity sha512-J6PZ3mufbegKmCVRD2tqGnVtXKbT1cFFWqrCY6pmK07SvQ7hN3w5KGcJeMIJALAEDzQqZRafjHs8lCWtZHN6/A==
   dependencies:
     "@slack/logger" "^2.0.0"
     "@slack/oauth" "^1.1.0"
@@ -116,9 +116,9 @@
   integrity sha512-Jus9s4CDbqwocc5pOAnh8ShfrnMcPHuJYzVcSUU7lrh8Ni5HuIqX3oilL86p3dlTrk0LzHRCgA/GQ7uNCw6l2Q==
 
 "@types/node@*", "@types/node@>=10", "@types/node@>=6.0.0", "@types/node@>=8.9.0":
-  version "14.0.26"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.26.tgz#22a3b8a46510da8944b67bfc27df02c34a35331c"
-  integrity sha512-W+fpe5s91FBGE0pEa0lnqGLL4USgpLgs4nokw16SrBBco/gQxuua7KnArSEOd5iaMqbbSHV10vUDkJYJJqpXKA==
+  version "14.0.27"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.27.tgz#a151873af5a5e851b51b3b065c9e63390a9e0eb1"
+  integrity sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==
 
 "@types/p-queue@^2.3.2":
   version "2.3.2"
@@ -146,9 +146,9 @@
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
 
 "@types/serve-static@*":
-  version "1.13.4"
-  resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.13.4.tgz#6662a93583e5a6cabca1b23592eb91e12fa80e7c"
-  integrity sha512-jTDt0o/YbpNwZbQmE/+2e+lfjJEJJR0I3OFaKQKPWkASkCoW3i6fsUnqudSMcNAfbtmADGu8f4MV4q+GqULmug==
+  version "1.13.5"
+  resolved "https://registry.yarnpkg.com/@types/serve-static/-/serve-static-1.13.5.tgz#3d25d941a18415d3ab092def846e135a08bbcf53"
+  integrity sha512-6M64P58N+OXjU432WoLLBQxbA0LRGBCRm7aAGQJ+SMC1IMl0dgRVi9EFfoDcS2a7Xogygk/eGN94CfwU9UF7UQ==
   dependencies:
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
