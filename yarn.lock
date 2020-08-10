@@ -41,9 +41,9 @@
     lodash.isstring "^4.0.1"
 
 "@slack/types@^1.6.0", "@slack/types@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@slack/types/-/types-1.7.0.tgz#0a00b60bc6703c1413edd823dcb0f829d16457ed"
-  integrity sha512-aigLPmTO513JxeFyeII/74y+S5jU39tabDWPsZyMHJWCYqK3vCkRvV73NL+Ay+Tq5RC2NgSmkedk1wvQJ6oXLg==
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/@slack/types/-/types-1.8.0.tgz#a5a0b31bace03f524174991dfc41c60311e6f32f"
+  integrity sha512-YvLCtxqbIdCCI+xMQBFH3GJVhRp8jJNl8BUE0RgJlZcDF+wXSB1wkcgLz7zHtD3oOF39GedYiE1e/rQrZ4Dr1A==
 
 "@slack/web-api@^5.7.0", "@slack/web-api@^5.9.0":
   version "5.11.0"
@@ -589,9 +589,9 @@ is-map@^2.0.1:
   integrity sha512-T/S49scO8plUiAOA2DBTBG3JHpn1yiw0kRp6dgiZ0v2/6twi5eiB0rHtHFH9ZIrvlWc6+4O+m4zg5+Z833aXgw==
 
 is-regex@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.1.0.tgz#ece38e389e490df0dc21caea2bd596f987f767ff"
-  integrity sha512-iI97M8KTWID2la5uYXlkbSDQIg4F6o1sYboZKKTDpnDQMLtUL86zxhgDet3Q2SriaYsyGqZ6Mn2SjbRKeLHdqw==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.1.1.tgz#c6f98aacc546f6cec5468a07b7b153ab564a57b9"
+  integrity sha512-1+QkEcxiLlB7VEyFtyBg94e08OAsvq7FUBgApTq/w2ymCLyKJgDPsybBENVtA7XCQEgEXxKPonG+mvYRxh/LIg==
   dependencies:
     has-symbols "^1.0.1"
 
