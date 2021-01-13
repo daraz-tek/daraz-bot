@@ -14,7 +14,7 @@
     "start": "node main.js"
   },
   "dependencies": {
-    "@slack/bolt": "2.x",
+    "@slack/bolt": "3.x",
     "date-fns": "2.x",
     "date-fns-tz": "1.x",
     "get-video-id": "3.x",
