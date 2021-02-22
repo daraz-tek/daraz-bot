@@ -3,9 +3,9 @@
 
 
 "@slack/bolt@3.x":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@slack/bolt/-/bolt-3.1.1.tgz#a78b59a85803044483166d7b9b3c1aae02f7724d"
-  integrity sha512-bX+EMrcGGLc3PsLJk9UUrd1MTuS09S42EyUZq9V/ZtQy5EqUcr4zr2LWUajAtQhKAi96ofQNt72vJkCK1GOTPQ==
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@slack/bolt/-/bolt-3.2.0.tgz#3704da9d110862825523d23e1bf8d94cf0293ee9"
+  integrity sha512-C3JMGGWkL9/i9uRkziWBWyb450uoufhzIbSjoOnfEgzsavuUQxZHhHwq6uyBU1WsIm1WUHrUFhVbparwCpscdg==
   dependencies:
     "@slack/logger" "^3.0.0"
     "@slack/oauth" "^2.0.0"
@@ -161,9 +161,9 @@
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
 "@types/node@*", "@types/node@>=12", "@types/node@>=12.0.0", "@types/node@>=8.9.0":
-  version "14.14.25"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.25.tgz#15967a7b577ff81383f9b888aa6705d43fbbae93"
-  integrity sha512-EPpXLOVqDvisVxtlbvzfyqSsFeQxltFbluZNRndIb8tr9KiBnYNLzrc1N3pyKUCww2RNrfHDViqDWWE1LCJQtQ==
+  version "14.14.31"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
+  integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
 
 "@types/p-queue@^2.3.2":
   version "2.3.2"
@@ -335,9 +335,9 @@ cookie@0.4.0:
   integrity sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==
 
 date-fns-tz@1.x:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.1.1.tgz#2e0dfcc62cc5b7b5fa7ea620f11a5e7f63a7ed75"
-  integrity sha512-5PR604TlyvpiNXtvn+PZCcCazsI8fI1am3/aimNFN8CMqHQ0KRl+6hB46y4mDbB7bk3+caEx3qHhS7Ewac/FIg==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.1.2.tgz#893c73026e20a8ae1bfb0c565dd2972df723776e"
+  integrity sha512-QY3KoLy16bERNTEhJV2UJfvQRcPOwneAGwLcKUyHYT1PKydYyEZ7rKJjo6tDvx3bXlQhbnvq7CrvbFlonR00AQ==
 
 date-fns@2.x:
   version "2.17.0"
@@ -801,9 +801,9 @@ lodash.once@^4.0.0:
   integrity sha1-DdOXEhPHxW34gJd9UEyI+0cal6w=
 
 lodash@^4.17.14:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
-  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -820,17 +820,17 @@ methods@~1.1.2:
   resolved "https://registry.yarnpkg.com/methods/-/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
-mime-db@1.45.0:
-  version "1.45.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.45.0.tgz#cceeda21ccd7c3a745eba2decd55d4b73e7879ea"
-  integrity sha512-CkqLUxUk15hofLoLyljJSrukZi8mAtgd+yE5uO4tqRZsdsAJKv0O+rFMhVDRJgozy+yG6md5KwuXhD4ocIoP+w==
+mime-db@1.46.0:
+  version "1.46.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.46.0.tgz#6267748a7f799594de3cbc8cde91def349661cee"
+  integrity sha512-svXaP8UQRZ5K7or+ZmfNhg2xX3yKDMUzqadsSqi4NCH/KomcH75MAMYAGVlvXn4+b/xOPhS3I2uHKRUzvjY7BQ==
 
 mime-types@^2.1.12, mime-types@~2.1.24:
-  version "2.1.28"
-  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.28.tgz#1160c4757eab2c5363888e005273ecf79d2a0ecd"
-  integrity sha512-0TO2yJ5YHYr7M2zzT7gDU1tbwHxEUWBCLt0lscSNpcdAfFyJOVEpRYNS7EXVcTLNj/25QO8gulHC5JtTzSE2UQ==
+  version "2.1.29"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.29.tgz#1d4ab77da64b91f5f72489df29236563754bb1b2"
+  integrity sha512-Y/jMt/S5sR9OaqteJtslsFZKWOIIqMACsJSiHghlCAyhf7jfVYjKBmLiX8OgpWeW+fjJ2b+Az69aPFPkUOY6xQ==
   dependencies:
-    mime-db "1.45.0"
+    mime-db "1.46.0"
 
 mime@1.6.0:
   version "1.6.0"
@@ -927,9 +927,9 @@ p-queue@^6.6.1:
     p-timeout "^3.2.0"
 
 p-retry@^4.0.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-4.3.0.tgz#a31679a66b0261a51fa6c43b19b6f4471a54021e"
-  integrity sha512-Pow4yaHpOiJou1QcpGcBJhGHiS4782LdDa6GhU91hlaNh3ExOOupjSJcxPQZYmUSZk3Pl2ARz/LRvW8Qu0+3mQ==
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-4.4.0.tgz#fefc2abe883ca7c91ca0dd25060180438b61ebd4"
+  integrity sha512-gVB/tBsG+3AHI1SyDHRrX6n9ZL0Bcbifps9W9/Bgu3Oyu4/OrAh8SvDzDsvpP0oxfCt3oWNT+0fQ9LyUGwBTLg==
   dependencies:
     "@types/retry" "^0.12.0"
     retry "^0.12.0"
