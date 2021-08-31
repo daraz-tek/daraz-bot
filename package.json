@@ -20,7 +20,7 @@
     "get-video-id": "3.x",
     "glob": "7.x",
     "kuromoji": "0.1.x",
-    "node-fetch": "2.x",
+    "node-fetch": "3.x",
     "tldjs": "2.x"
   },
   "engines": {
