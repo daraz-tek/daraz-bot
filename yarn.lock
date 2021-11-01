@@ -43,20 +43,20 @@
     lodash.isstring "^4.0.1"
 
 "@slack/socket-mode@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@slack/socket-mode/-/socket-mode-1.1.0.tgz#f91ff24a0cf35cb7fb8e411e65fa96553a1c1efc"
-  integrity sha512-Nncad6yRjt23+qXlyKedyihsCvg0oQrJ5SMZN0HeAKxWPI5jHrUtH2q0R+spRqiRpP7YSy6F+na72v8Etz3nog==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@slack/socket-mode/-/socket-mode-1.2.0.tgz#1a64fa3b5e864e7495391e142ad56ff0a80193c8"
+  integrity sha512-k+WAeMoeiivome/cfscyAHfVFL8/mPhz3p6NIz/LA9vJ1nv2cEPow/wLqzWM73xqlHARCxQWh3gqLqCPHvhXbg==
   dependencies:
     "@slack/logger" "^3.0.0"
     "@slack/web-api" "^6.2.3"
     "@types/node" ">=12.0.0"
     "@types/p-queue" "^2.3.2"
-    "@types/ws" "^7.2.5"
+    "@types/ws" "^7.4.7"
     eventemitter3 "^3.1.0"
     finity "^0.5.4"
     p-cancelable "^1.1.0"
     p-queue "^2.4.2"
-    ws "^7.3.1"
+    ws "^7.5.3"
 
 "@slack/types@^2.0.0", "@slack/types@^2.2.0":
   version "2.2.0"
@@ -134,9 +134,9 @@
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
 "@types/node@*", "@types/node@>=12", "@types/node@>=12.0.0":
-  version "16.11.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.4.tgz#90771124822d6663814f7c1c9b45a6654d8fd964"
-  integrity sha512-TMgXmy0v2xWyuCSCJM6NCna2snndD8yvQF67J29ipdzMcsPa9u+o0tjF5+EQNdhcuZplYuouYqpc4zcd5I6amQ==
+  version "16.11.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.6.tgz#6bef7a2a0ad684cf6e90fcfe31cecabd9ce0a3ae"
+  integrity sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==
 
 "@types/p-queue@^2.3.2":
   version "2.3.2"
@@ -176,7 +176,7 @@
   resolved "https://registry.yarnpkg.com/@types/tsscmp/-/tsscmp-1.0.0.tgz#761c885a530f9673ae6fda0cae38253ffd46cba6"
   integrity sha512-rj18XR6c4Ohds86Lq8MI1NMRrXes4eLo4H06e5bJyKucE1rXGsfBBbFGD2oDC+DSufQCpnU3TTW7QAiwLx+7Yw==
 
-"@types/ws@^7.2.5":
+"@types/ws@^7.4.7":
   version "7.4.7"
   resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.4.7.tgz#f7c390a36f7a0679aa69de2d501319f4f8d9b702"
   integrity sha512-JQbbmxZTZehdc2iszGKs5oC3NFnjeay7mtAWrdt7qNtAVK0g19muApzAy4bm9byz79xa2ZnO/BOBC2R8RC5Lww==
@@ -484,9 +484,9 @@ express@^4.16.4:
     vary "~1.1.2"
 
 fetch-blob@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/fetch-blob/-/fetch-blob-3.1.2.tgz#6bc438675f3851ecea51758ac91f6a1cd1bacabd"
-  integrity sha512-hunJbvy/6OLjCD0uuhLdp0mMPzP/yd2ssd1t2FCJsaA7wkWhpbp9xfuNVpv7Ll4jFhzp6T4LAupSiV9uOeg0VQ==
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/fetch-blob/-/fetch-blob-3.1.3.tgz#a7dca4855e39d3e3c5a1da62d4ee335c37d26012"
+  integrity sha512-ax1Y5I9w+9+JiM+wdHkhBoxew+zG4AJ2SvAD1v1szpddUIiPERVGBxrMcB2ZqW0Y3PP8bOWYv2zqQq1Jp2kqUQ==
   dependencies:
     web-streams-polyfill "^3.0.3"
 
@@ -509,9 +509,9 @@ finity@^0.5.4:
   integrity sha512-3l+5/1tuw616Lgb0QBimxfdd2TqaDGpfCBpfX6EqtFmqUV3FtQnVEX4Aa62DagYEqnsTIjZcTfbq9msDbXYgyA==
 
 follow-redirects@^1.14.0:
-  version "1.14.4"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
-  integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
 
 form-data@^2.5.0:
   version "2.5.1"
@@ -560,9 +560,9 @@ get-symbol-description@^1.0.0:
     get-intrinsic "^1.1.1"
 
 get-video-id@3.x:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/get-video-id/-/get-video-id-3.4.1.tgz#ea4e03288e4be6f89fac7516f23717c558203bc8"
-  integrity sha512-2MkfbzofPQ7YsW0mrShmGEvnGrNzjXzAwJEePYwoi1dDqTpghHDMq5+T61Stmez8X4I+I8phT+unuttw/AB36w==
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/get-video-id/-/get-video-id-3.4.3.tgz#e8ffb0d8eaa47ba665071e220eb5a32a4edbab9c"
+  integrity sha512-8nMAfLWOtloLCHknItYFK81cMEjBS+nMY1ukUMligbvaOiQRyLGVNt0fkSAl5Pz5cpCL+KAJAjyjSUXldGLH5w==
 
 glob@7.x:
   version "7.2.0"
@@ -1243,7 +1243,7 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^7.3.1:
+ws@^7.5.3:
   version "7.5.5"
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.5.tgz#8b4bc4af518cfabd0473ae4f99144287b33eb881"
   integrity sha512-BAkMFcAzl8as1G/hArkxOxq3G7pjUqQ3gzYbLL0/5zNkph70e+lCoxBGnm6AW1+/aiNeV4fnKqZ8m4GZewmH2w==
