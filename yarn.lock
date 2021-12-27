@@ -96,9 +96,9 @@
     "@types/node" "*"
 
 "@types/express-serve-static-core@^4.17.18":
-  version "4.17.26"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.26.tgz#5d9a8eeecb9d5f9d7fc1d85f541512a84638ae88"
-  integrity sha512-zeu3tpouA043RHxW0gzRxwCHchMgftE8GArRsvYT0ByDMbn19olQHx5jLue0LxWY6iYtXb7rXmuVtSkhy9YZvQ==
+  version "4.17.27"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.27.tgz#7a776191e47295d2a05962ecbb3a4ce97e38b401"
+  integrity sha512-e/sVallzUTPdyOTiqi8O8pMdBBphscvI6E4JYaKlja4Lm+zh7UFSSdW5VMkRbhDtmrONqOUHOXRguPsDckzxNA==
   dependencies:
     "@types/node" "*"
     "@types/qs" "*"
@@ -134,9 +134,9 @@
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
 "@types/node@*", "@types/node@>=12", "@types/node@>=12.0.0":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.1.tgz#88d501e84b6185f6489ecee4ba9e8fcec7f29bb2"
-  integrity sha512-NXKvBVUzIbs6ylBwmOwHFkZS2EXCcjnqr8ZCRNaXBkHAf+3mn/rPcJxwrzuc6movh8fxQAsUUfYklJ/EG+hZqQ==
+  version "17.0.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.5.tgz#57ca67ec4e57ad9e4ef5a6bab48a15387a1c83e0"
+  integrity sha512-w3mrvNXLeDYV1GKTZorGJQivK6XLCoGwpnyJFbJVK/aTBQUxOCaa/GlFAAN3OTDFcb7h5tiFG+YXCO2By+riZw==
 
 "@types/p-queue@^2.3.2":
   version "2.3.2"
@@ -320,9 +320,9 @@ data-uri-to-buffer@^4.0.0:
   integrity sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==
 
 date-fns-tz@1.x:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.1.7.tgz#17d86054d18829b5052bfbe4ed5c394f40d2b615"
-  integrity sha512-xfL918kXO528DJ17Sao60H07rYv5L/X0Bp6zojDssuZAR/acYETDS9PaICKAnodcO9XVHL/0bpLRGKd7kNnvcQ==
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/date-fns-tz/-/date-fns-tz-1.2.2.tgz#89432b54ce3fa7d050a2039e997e5b6a96df35dd"
+  integrity sha512-vWtn44eEqnLbkACb7T5G5gPgKR4nY8NkNMOCyoY49NsRGHrcDmY2aysCyzDeA+u+vcDBn/w6nQqEDyouRs4m8w==
 
 date-fns@2.x:
   version "2.27.0"
