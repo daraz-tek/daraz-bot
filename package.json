@@ -18,7 +18,7 @@
     "date-fns": "2.x",
     "date-fns-tz": "1.x",
     "get-video-id": "3.x",
-    "glob": "7.x",
+    "glob": "8.x",
     "kuromoji": "0.1.x",
     "node-fetch": "3.x",
     "tldjs": "2.x"
