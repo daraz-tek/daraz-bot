@@ -1,6 +1,6 @@
 # だらずさん ⚡
 
-[Slack ⚡ Bolt](https://github.com/SlackAPI/bolt) で作り直した [だらずさん](https://github.com/daraz-tek/daraz-bot)
+[Bolt](https://github.com/slackapi/bolt-js) で作り直した [だらずさん](https://github.com/daraz-tek/daraz-bot)
 
 ## つかいかた
 
@@ -20,25 +20,3 @@
 - `SLACK_BOT_TOKEN` ... OAuth & Permissions ページにあるボット (xoxb) トークン
 - `SLACK_SIGNING_SECRET` ... Basic Information ページにある Signing Secret
 - (Optional) `PORT` ... ポート番号。デフォルトは 8080。
-
-### デプロイ
-
-#### Fly.io
-
-[`flyctl deploy`](https://fly.io/docs/speedrun/)
-
-#### Heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/kou029w/daraz-san)
-
-#### Google Cloud Run
-
-[![Deploy](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/kou029w/daraz-san)
-
-#### CodeSandbox
-
-[![Edit daraz-san](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/kou029w/daraz-san)
-
-#### Glitch
-
-[![Edit daraz-san](https://img.shields.io/badge/glitch-edit-33f?logo=glitch&style=for-the-badge)](https://glitch.com/edit/#!/kou029w-daraz-san)
