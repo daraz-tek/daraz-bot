@@ -1,5 +1,3 @@
-const fetch = require("node-fetch");
-
 module.exports = async (titles) => {
   const url = new URL("https://ja.wikipedia.org/w/api.php");
   const params = new URLSearchParams({

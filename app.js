@@ -1,3 +1,4 @@
+require("cross-fetch/polyfill");
 const { App: BoltApp } = require("@slack/bolt");
 
 class App extends BoltApp {

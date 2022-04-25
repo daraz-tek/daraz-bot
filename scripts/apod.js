@@ -1,4 +1,3 @@
-const fetch = require("node-fetch");
 const get_video_id = require("get-video-id");
 
 const API_KEY = "Q8mtkFkP4Zru4mlDd812iw2vcQwx5B0qIsUKsxit";
