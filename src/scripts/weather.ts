@@ -1,22 +1,20 @@
-const subMinutes = require("date-fns/subMinutes");
-const roundToNearestMinutes = require("date-fns/roundToNearestMinutes");
-const format = require("date-fns-tz/format");
-const utcToZonedTime = require("date-fns-tz/utcToZonedTime");
-const nyanco = require("./util/nyanco");
+import { subMinutes, roundToNearestMinutes } from "date-fns";
+import { format, utcToZonedTime } from "date-fns-tz";
+import nyanco from "./utils/nyanco";
 
 const timeZone = "Asia/Tokyo";
 const prefNumber = 34;
 const pageURL = `https://www.tenki.jp/radar/7/${prefNumber}/`;
-const imgURL = (target) =>
+const imgURL = (target: any) =>
   [
     "https://static.tenki.jp/static-images/radar/",
     format(target, "yyyy/MM/dd/HH/mm/ss", { timeZone }),
     `/pref-${prefNumber}-large.jpg`,
   ].join("");
 
-module.exports = [
+export default [
   /天気/,
-  async ({ say }) => {
+  async ({ say }: any) => {
     const target = utcToZonedTime(
       roundToNearestMinutes(subMinutes(new Date(), 5), {
         nearestTo: 5,
@@ -26,11 +24,9 @@ module.exports = [
 
     return say(
       [
-        `${nyanco()} ＜ ${format(
-          target,
-          "HH時mm分の雨雲の様子にゃーん",
-          timeZone
-        )}`,
+        `${nyanco()} ＜ ${format(target, "HH時mm分の雨雲の様子にゃーん", {
+          timeZone,
+        })}`,
         imgURL(target),
         pageURL,
       ].join("\n")

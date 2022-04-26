@@ -1,6 +1,6 @@
-module.exports = [
+export default [
   /(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/,
-  async ({ context, say }) => {
+  async ({ context, say }: any) => {
     const ip = context.matches[0];
     const url = `https://ipinfo.io/${ip}`;
     const options = {

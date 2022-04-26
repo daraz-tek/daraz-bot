@@ -1,6 +1,6 @@
-const { directMention } = require("@slack/bolt");
-const { useTokenize, toCSV } = require("./util/morpheme");
-const nyanco = require("./util/nyanco");
+import { directMention } from "@slack/bolt";
+import { makeTokenize, toCSV } from "./utils/morpheme";
+import nyanco from "./utils/nyanco";
 
 // Description:
 //   すもももももももものうち
@@ -8,14 +8,14 @@ const nyanco = require("./util/nyanco");
 // Synopsis:
 //   morpheme <phrase> - <phrase> を形態素解析器にかけるにゃーん
 
-module.exports = [
+export default [
   directMention(),
   /morpheme (.*)/i,
-  async ({ context, say }) => {
+  async ({ context, say }: any) => {
     try {
-      const tokenize = await useTokenize();
+      const tokenize = await makeTokenize();
       const tokens = tokenize(context.matches[1]);
-      const readings = tokens.map(({ reading }) => reading);
+      const readings = tokens.map(({ reading }: any) => reading);
       return say(
         [`${nyanco()} ＜ ${readings.join("")}`, toCSV(tokens)].join("\n")
       );

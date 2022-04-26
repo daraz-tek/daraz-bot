@@ -1,49 +1,49 @@
 // @ts-check
-const random = require("./util/random");
-const nyanco = require("./util/nyanco");
+import random from "./utils/random";
+import nyanco from "./utils/nyanco";
 
 const patterns = [
-  [/ぬ.*る.*ぽ/, ({ say }) => say(`${nyanco()} < にゃーん`)],
+  [/ぬ.*る.*ぽ/, ({ say }: any) => say(`${nyanco()} < にゃーん`)],
   [
     /だらず((さん)?.*)/,
-    ({ context, say }) =>
+    ({ context, say }: any) =>
       say(
         `${nyanco()} < ${
           context.matches[2] ? "にゃーん" : "さんを付けろよデコスケ野郎っ！"
         }`
       ),
   ],
-  [/こたつ/, ({ say }) => say(`${nyanco()} < しまえ`)],
-  [/(しお|塩)/, ({ say }) => say(`${nyanco()} < しお`)],
+  [/こたつ/, ({ say }: any) => say(`${nyanco()} < しまえ`)],
+  [/(しお|塩)/, ({ say }: any) => say(`${nyanco()} < しお`)],
   [
     /(らーめん|ラーメン|拉麺|らうめん)/,
-    ({ say }) => say(`${nyanco()} < :ramen:`),
+    ({ say }: any) => say(`${nyanco()} < :ramen:`),
   ],
-  [/しりとり/, ({ say }) => say(`${nyanco()} < うどん。`)],
+  [/しりとり/, ({ say }: any) => say(`${nyanco()} < うどん。`)],
   [
     /(糞|くそ|クソ)(すれ|スレ)/,
-    ({ say }) => say(`${nyanco()} < クソスレで悪かったな！！`),
+    ({ say }: any) => say(`${nyanco()} < クソスレで悪かったな！！`),
   ],
   [
     /(カレー|かれー|華麗)/,
-    ({ say }) => say("https://pbs.twimg.com/media/C-RVt9pUAAARRVe.jpg"),
+    ({ say }: any) => say("https://pbs.twimg.com/media/C-RVt9pUAAARRVe.jpg"),
   ],
   [
     /(すし|鮨|寿司|スシ|まぐろ|マグロ|sushi)/i,
-    ({ say }) => say(`${nyanco()} < あいよ っ :sushi:`),
+    ({ say }: any) => say(`${nyanco()} < あいよ っ :sushi:`),
   ],
-  [/ちゃ|茶/, ({ say }) => say(`お茶どぞー < ${nyanco()}っ :tea:`)],
+  [/ちゃ|茶/, ({ say }: any) => say(`お茶どぞー < ${nyanco()}っ :tea:`)],
   [
     /風邪|かぜ|カゼ|体調|つらい|くるしい|痛い|ひぎぃ|うぐぅ/,
-    ({ say }) => say(`おくすりどぞー < ${nyanco()}っ :pill:`),
+    ({ say }: any) => say(`おくすりどぞー < ${nyanco()}っ :pill:`),
   ],
   [
     /(ちらし|チラシ|広告)/,
-    ({ say }) => say(`${nyanco()} < スタンプラリーやめれ`),
+    ({ say }: any) => say(`${nyanco()} < スタンプラリーやめれ`),
   ],
   [
     /進捗どうですか/,
-    ({ message, say }) => {
+    ({ message, say }: any) => {
       const from = `<@${message.user}>`;
       return say(
         [
@@ -56,7 +56,7 @@ const patterns = [
   ],
   [
     /(のむら|さちよ|野村|沙知代|さっちー|サッチー|のむさん|ノムサン)/,
-    ({ say }) =>
+    ({ say }: any) =>
       say(
         [
           ":nomura-exodia-1::nomura-exodia-2::nomura-exodia-3:",
@@ -67,7 +67,7 @@ const patterns = [
   ],
   [
     /(肉|にく|ニク)/,
-    ({ say }) => {
+    ({ say }: any) => {
       if (random([...Array(3).keys()]) !== 0) return;
       return say(
         [
@@ -81,7 +81,7 @@ const patterns = [
   ],
   [
     /(野球|やきゅう|やきう)/,
-    ({ say }) => {
+    ({ say }: any) => {
       if (random([...Array(10).keys()]) !== 0) return;
       return say(
         [
@@ -94,7 +94,7 @@ const patterns = [
   ],
   [
     /.*(ね|ネ).+(ハム|はむ)(たろう|たろー|タロウ|タロー|太郎)/,
-    ({ context, say }) => {
+    ({ context, say }: any) => {
       if (
         /(死|亡|殺)/.test(context.matches[0]) ||
         random([...Array(10).keys()]) === 0
@@ -107,9 +107,9 @@ const patterns = [
   ],
   [
     /^(?=.*[eE]macs)(?=.*[vV]i)/,
-    ({ say }) => say(`${nyanco()} < Emacs vs. Vi ファイ！`),
+    ({ say }: any) => say(`${nyanco()} < Emacs vs. Vi ファイ！`),
   ],
 ];
 
-module.exports = (app) =>
+export default (app: any) =>
   patterns.forEach((pattern) => app.message(...pattern));

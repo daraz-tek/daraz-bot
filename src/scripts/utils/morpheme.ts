@@ -1,11 +1,11 @@
-const kuromoji = require("kuromoji");
+import kuromoji, { Tokenizer, IpadicFeatures } from "kuromoji";
+import path from "node:path";
 
-const dicPath = require("path").resolve(
-  require.resolve("kuromoji"),
-  "../../dict"
-);
+const dicPath = path.resolve(require.resolve("kuromoji"), "../../dict");
 
-const useTokenize = () =>
+export const makeTokenize = (): Promise<
+  Tokenizer<IpadicFeatures>["tokenize"]
+> =>
   new Promise((resolve, reject) =>
     kuromoji
       .builder({ dicPath })
@@ -27,12 +27,10 @@ const features = new Map([
   ["pronunciation", "発音"],
 ]);
 
-const toCSV = (tokens) =>
+export const toCSV = (tokens: any) =>
   [
     [...features.values()].join(","),
-    ...tokens.map((token) =>
+    ...tokens.map((token: any) =>
       [...features.keys()].map((feature) => token[feature]).join(",")
     ),
   ].join("\n");
-
-module.exports = { useTokenize, toCSV };

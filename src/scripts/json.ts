@@ -1,5 +1,5 @@
-const { directMention } = require("@slack/bolt");
-const nyanco = require("./util/nyanco");
+import { directMention } from "@slack/bolt";
+import nyanco from "./utils/nyanco";
 
 // Description:
 //   だらずさんは JSON のお掃除がだいすきです
@@ -7,10 +7,10 @@ const nyanco = require("./util/nyanco");
 // Synopsis:
 //   json <jsonstring> - あなたの JSON をぷりちーにするにゃん
 
-module.exports = [
+export default [
   directMention(),
   /json +(.*)/i,
-  ({ context, say }) => {
+  ({ context, say }: any) => {
     try {
       const json = JSON.parse(context.matches[1]);
       const res = JSON.stringify(json, null, 2);

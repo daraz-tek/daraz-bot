@@ -1,4 +1,4 @@
-module.exports = async (titles) => {
+export default async (titles: any) => {
   const url = new URL("https://ja.wikipedia.org/w/api.php");
   const params = new URLSearchParams({
     action: "query",
@@ -6,7 +6,7 @@ module.exports = async (titles) => {
     prop: "extracts",
     titles,
     redirects: "",
-    exchars: 120,
+    exchars: "120",
     explaintext: "",
   });
   try {
@@ -18,12 +18,13 @@ module.exports = async (titles) => {
     if (json == null || json.query == null || json.query.pages == null) {
       throw new Error(["response is invalid", JSON.stringify(json)].join(":"));
     }
-    const pages = new Map(Object.entries(json.query.pages));
+    const pages: Map<string, { extract: string }> = new Map(
+      Object.entries(json.query.pages)
+    );
     return pages.size > 0
       ? [...pages.values()].map(({ extract }) => extract).join("\n")
       : "しらないにゃーん";
   } catch (e) {
     console.error(e);
   }
-  return null;
 };

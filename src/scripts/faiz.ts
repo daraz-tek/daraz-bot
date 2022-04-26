@@ -1,5 +1,5 @@
-module.exports = (app) => {
-  app.message(/555/, ({ say }) =>
+export default (app: any) => {
+  app.message(/555/, ({ say }: any) =>
     say(
       [
         "Standing by... > :nya-n:",
@@ -10,7 +10,7 @@ module.exports = (app) => {
       ].join("\n")
     )
   );
-  app.message(/551/, ({ say }) =>
+  app.message(/551/, ({ say }: any) =>
     say(
       [
         "551の豚まんがあるときー？ > :nya-n:",
