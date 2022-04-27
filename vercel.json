@@ -1,0 +1,6 @@
+{
+  "functions": {
+    "api/slack/events.ts": { "includeFiles": "{dist,node_modules/kuromoji}/**" }
+  },
+  "build": { "env": { "NODEJS_AWS_HANDLER_NAME": "handler" } }
+}
